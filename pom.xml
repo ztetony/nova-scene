@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>iotx-nova</groupId>
+    <artifactId>nova-scene</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.1-SNAPSHOT</version>
+    <modules>
+        <module>nova-space-core</module>
+        <module>nova-space-api</module>
+    </modules>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+
+            </plugin>
+    </plugins>
+    </build>
+
+    <!-- 配置部署的远程仓库 -->
+    <distributionManagement>
+        <repository>
+            <id>release-zq</id>
+            <url>http://127.0.0.1:8081/nexus/content/repositories/release-zq/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-zq</id>
+            <name>nexus distribution snapshot repository</name>
+            <url>http://127.0.0.1:8081/nexus/content/repositories/snapshot-zq/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <commons-util.r.version>3.0.1</commons-util.r.version>
+    </properties>
+
+
+</project>
