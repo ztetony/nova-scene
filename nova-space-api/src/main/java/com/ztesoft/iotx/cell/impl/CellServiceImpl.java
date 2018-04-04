@@ -8,4 +8,12 @@ public class CellServiceImpl implements ICellService{
 
         return 1111L;
     }
+
+    public CellDTO getCellInfo(long id) {
+
+        CellDTO cellDTO = new CellDTO();
+
+
+        return cellDTO;
+    }
 }

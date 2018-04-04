@@ -7,4 +7,6 @@ public interface ICellService {
 
     public Long CreateCell(CellDTO cellDTO);
 
+    public CellDTO getCellInfo(long id);
+
 }
