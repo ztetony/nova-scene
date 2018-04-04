@@ -6,6 +6,6 @@ import com.ztesoft.iotx.cell.service.ICellService;
 public class CellServiceImpl implements ICellService{
     public Long CreateCell(CellDTO cellDTO) {
 
-        return 1L;
+        return 1111L;
     }
 }
