@@ -12,6 +12,7 @@
         <module>nova-space-core</module>
         <module>nova-space-api</module>
         <module>nova-space-web</module>
+        <module>nova-space-web</module>
     </modules>
 
     <dependencies>
