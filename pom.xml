@@ -12,7 +12,6 @@
         <module>nova-space-core</module>
         <module>nova-space-api</module>
         <module>nova-space-web</module>
-        <module>nova-space-web</module>
     </modules>
 
     <dependencies>
@@ -33,13 +32,14 @@
     <!-- 配置部署的远程仓库 -->
     <distributionManagement>
         <repository>
-            <id>release-zq</id>
-            <url>http://127.0.0.1:8081/nexus/content/repositories/release-zq/</url>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://115.28.85.213:28081/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
-            <id>snapshot-zq</id>
-            <name>nexus distribution snapshot repository</name>
-            <url>http://127.0.0.1:8081/nexus/content/repositories/snapshot-zq/</url>
+            <id>snapshots</id>
+            <name>Snapshots</name>
+            <url>http://115.28.85.213:28081/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
